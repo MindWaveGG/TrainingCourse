@@ -23,6 +23,8 @@ function resetForm() {
     document.getElementById("condition").value = "";
 }
 
+resetFormButton.addEventListener("click", resetForm);
+
 function generateReport() {
     const numPatients = patients.length;
     const conditionsCount = {
