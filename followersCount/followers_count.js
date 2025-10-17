@@ -17,3 +17,10 @@ function checkCountValue() {
     alert("Your Instagram post gained 20 followers! Keep it up!");
   }
 }
+
+function resetCount() {
+    if (count !== 0) {  // "not" is not valid JS, use !== instead
+        count = 0;
+        displayCount(); // Display the count
+    }
+}
